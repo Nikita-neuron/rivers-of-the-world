@@ -20,6 +20,71 @@
     <script src="../../js/scrollBtn.js" defer></script>
 
     <title>South America</title>
+
+    <style>
+        .river-card {
+            position: relative;
+            z-index: 5;
+            transition: 0.3s;
+            overflow: hidden;
+            border-radius: 10px;
+        }
+
+        .river-card::before, .river-card::after {
+            content: "";
+            opacity: 0;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            border: 2px solid #1158CD;
+            transition: all 0.5s;
+            animation: clippath 5s infinite linear;
+        }
+
+        .river-card::after {
+            animation: clippath 5s infinite -2.5s linear;
+        }
+
+        .river-card:hover::before, .river-card:hover::after {
+            opacity: 1;
+        }
+
+        .rivers-cards:hover > .river-card:not(:hover) {
+            filter: brightness(40%);
+        }
+
+        .river-card:hover {
+            transform: scale(1.1);
+        }
+        
+        @keyframes clippath {
+            0%, 100% {
+                clip-path: inset(0 0 98% 0);
+            }
+            25% {
+                clip-path: inset(0 98% 0 0);
+            }
+            50% {
+                clip-path: inset(98% 0 0 0);
+            }
+            75% {
+                clip-path: inset(0 0 0 98%);
+            }
+        }
+        body::-webkit-scrollbar {
+            width: 16px;
+        }
+        body::-webkit-scrollbar-track {
+            background-color: #a0a0a0;
+            border-radius: 100px;
+        }
+        body::-webkit-scrollbar-thumb {
+            background-color: #635e29;
+            border-radius: 100px;
+        }
+    </style>
 </head>
 <body>
     <header class="header">
@@ -192,9 +257,9 @@
             <div class="sec quicklinks">
                 <h3>Quick Links</h3>
                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About site</a></li>
-                    <li><a href="#">Contacts</a></li>
+                    <li><a href="../../index.html">Home</a></li>
+                    <li><a href="#aboutus">About site</a></li>
+                    <li><a href="#contacts">Contacts</a></li>
                 </ul>
             </div>
             <div class="sec contact" id="contacts">

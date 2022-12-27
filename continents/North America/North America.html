@@ -20,6 +20,26 @@
     <script src="../../js/scrollBtn.js" defer></script>
 
     <title>North America</title>
+
+    <style>
+        .river-card {
+            transition: 0.5s;
+        }
+        .river-card:hover {
+            transform: scale(1.1);
+        }
+        body::-webkit-scrollbar {
+            width: 16px;
+        }
+        body::-webkit-scrollbar-track {
+            background-color: #a0a0a0;
+            border-radius: 100px;
+        }
+        body::-webkit-scrollbar-thumb {
+            background-color: #633c29;
+            border-radius: 100px;
+        }
+    </style>
 </head>
 <body>
     <header class="header">
@@ -188,9 +208,9 @@
             <div class="sec quicklinks">
                 <h3>Quick Links</h3>
                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About site</a></li>
-                    <li><a href="#">Contacts</a></li>
+                    <li><a href="../../index.html">Home</a></li>
+                    <li><a href="#aboutus">About site</a></li>
+                    <li><a href="#contacts">Contacts</a></li>
                 </ul>
             </div>
             <div class="sec contact" id="contacts">

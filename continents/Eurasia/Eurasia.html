@@ -20,6 +20,33 @@
     <script src="../../js/scrollBtn.js" defer></script>
     
     <title>Eurasia</title>
+
+    <style>
+        .river-card-title {
+            opacity: 0.3;
+            transition: 0.5s;
+        }
+        .river-card-img {
+            transition: 0.5s;
+        }
+        .river-card:hover .river-card-img{
+            opacity: 0.3;
+        }
+        .river-card:hover .river-card-title{
+            opacity: 1;
+        }
+        body::-webkit-scrollbar {
+            width: 16px;
+        }
+        body::-webkit-scrollbar-track {
+            background-color: #a0a0a0;
+            border-radius: 100px;
+        }
+        body::-webkit-scrollbar-thumb {
+            background-color: #6d7936;
+            border-radius: 100px;
+        }
+    </style>
 </head>
 <body>
     <header class="header">
@@ -245,9 +272,9 @@
             <div class="sec quicklinks">
                 <h3>Quick Links</h3>
                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About site</a></li>
-                    <li><a href="#">Contacts</a></li>
+                    <li><a href="../../index.html">Home</a></li>
+                    <li><a href="#aboutus">About site</a></li>
+                    <li><a href="#contacts">Contacts</a></li>
                 </ul>
             </div>
             <div class="sec contact" id="contacts">

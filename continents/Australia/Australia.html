@@ -20,6 +20,30 @@
     <script src="../../js/scrollBtn.js" defer></script>
 
     <title>Australia</title>
+
+    <style>
+        .river-card {
+            overflow: hidden;
+            border-radius: 10px;
+        }
+        .river-card-img {
+            transition: 0.3s;
+        }
+        .river-card:hover .river-card-img {
+            transform: scale(1.25) rotate(2deg);
+        }
+        body::-webkit-scrollbar {
+            width: 16px;
+        }
+        body::-webkit-scrollbar-track {
+            background-color: #a0a0a0;
+            border-radius: 100px;
+        }
+        body::-webkit-scrollbar-thumb {
+            background-color: #205b1f;
+            border-radius: 100px;
+        }
+    </style>
 </head>
 <body>
     <header class="header">
@@ -158,9 +182,9 @@
             <div class="sec quicklinks">
                 <h3>Quick Links</h3>
                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About site</a></li>
-                    <li><a href="#">Contacts</a></li>
+                    <li><a href="../../index.html">Home</a></li>
+                    <li><a href="#aboutus">About site</a></li>
+                    <li><a href="#contacts">Contacts</a></li>
                 </ul>
             </div>
             <div class="sec contact" id="contacts">
